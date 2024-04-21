@@ -2603,8 +2603,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
+			margin: 0 0 10% 10%;
+			width: 80%;
 		}
 
 			.image.fit img {
@@ -2620,6 +2620,33 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+
+	.image.half-size {
+		display:block;
+		margin: 0 0 2em 0;
+		width: 60%;
+		margin-left: 20%;
+
+	}
+
+
+	@media screen and (max-width: 720px) {
+
+	.image.half-size {
+		display:block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+	.image.fit {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+
+}
+
 
 
 /* List */
@@ -2899,6 +2926,10 @@ input, select, textarea {
 		font-size: 0.9em;
 		margin-top: -0.6em;
 		line-height: 1.5em;
+	}
+
+	.grid {
+		display: flex;
 	}
 
 /* Split */
